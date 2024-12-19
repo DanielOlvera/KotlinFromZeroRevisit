@@ -31,14 +31,14 @@ fun main() {
         println("Invalid input")
     }
 
-    var input2 = readLine()
+    val input2 = readLine()
 //    input2 = input2?.toUpperCase()
 //    println(input2)
 
     val side = input2?.toDoubleOrNull()
     side?.let {
-        val result = it * it
-        println("Let $result")
+        val resultLet = it * it
+        println("Let $resultLet")
     }
 
     println("Finished")
