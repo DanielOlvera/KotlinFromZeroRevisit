@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     println(solution(list1, list2).toString())
 }
 
-fun solution(list1: Array<String>, list2: Array<String>): List<String> {
+private fun solution(list1: Array<String>, list2: Array<String>): List<String> {
     val set1 = list1.toSet()
     val set2 = list2.toSet()
 

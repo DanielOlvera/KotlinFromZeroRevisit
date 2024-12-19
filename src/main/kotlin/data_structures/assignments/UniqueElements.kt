@@ -8,7 +8,7 @@ fun main() {
     println(solution(list1, list2))
 }
 
-fun solution(lis1: List<String>, list2: List<String>): Pair<List<String>, List<String>> {
+private fun solution(lis1: List<String>, list2: List<String>): Pair<List<String>, List<String>> {
     val set1 = lis1.toSet()
     val set2 = list2.toSet()
 

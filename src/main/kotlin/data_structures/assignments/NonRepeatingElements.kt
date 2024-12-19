@@ -21,7 +21,7 @@ fun main() {
     println(solution(products).toString())
 }
 
-fun solution(products: List<String>): List<String> {
+private fun solution(products: List<String>): List<String> {
     val seen = mutableSetOf<String>()
     val recurrent = mutableSetOf<String>()
 
