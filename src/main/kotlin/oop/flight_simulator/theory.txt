@@ -1,0 +1,44 @@
+- A class is a template, an abstraction of the reality, it will help a model of the objects that exist in real life.
+For example for this scenario we will be creating or class Plane
+
+- A class is composed by a set of attributes or properties, by example for this example we'll have the following:
+ Class Plane:
+  - 3D Model: As is a flight simulator we will have the model for different types of planes
+  - Max speed: Depending on the type of plane they'll have different speeds
+  - Number of passengers: Depending on the type of plane each plan can carry a different amount of passengers.
+  etc. here we can continue adding more properties/attributes.
+
+- A class also contain methods, these methods are going to represent the actions that our class is going to perform.
+ For our class we can think of the following:
+ - Takeoff: When the plane increases trust for lift off and climbs to a safe altitude
+ - Cruise: Level flight at a constant altitude and speed
+ - Landing: Touching down on the runway and slowing to a stop
+ et. we could add more methods as actions we require.
+
+ - We can extend our flight simulator by inheriting properties, methods, etc. this will be useful so we don't have to
+   rewrite all those components, by example, what if we want to include helicopters
+   in our simulator, so now we can create a parent class called Aircraft that will inherit properties to our Plane
+   class and a newly created class Helicopter
+
+   Aircraft - attribute: 3dModel, maxSpeed | methods: render(), flight()
+   |
+   |___________________________________________________________
+   |                                                          |
+   Plane - attribute: wingType | methods: touchdown()          Helicopter: attribute: numberOfBlades | methods: stabilize()
+
+   For example, Plane inherits the methods and attributes of Aircraft and can define its own attributes and methods
+
+   Object is an instance of a class.
+
+- Principles of OOP: Encapsulation, Abstraction, Inheritance, Polymorphism
+
+- From the class Plane, we can create an Instance, instantiation is the process of creating objects from the class
+- Encapsulation, refers to isolate or protect some attributes of our class we don't want to get modified, for
+  example we can lock the render is something from aircraft so classes like Plane or Helicopter don't have access to it
+  to protect the functioning from modification
+- Polymorphism, basically is the way in which objects can behave in a different way, for example the takeOff() method,
+  the action is not going to be the same between a Helicopter and a Plane.
+
+
+
+
